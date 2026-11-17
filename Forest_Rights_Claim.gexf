@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:viz="http:///www.gexf.net/1.1draft/viz">
+  <meta/>
+  <graph defaultedgetype="directed">
+    <attributes class="node">
+      <attribute id="full_name" title="full_name" type="string"/>
+      <attribute id="type" title="type" type="string"/>
+      <attribute id="function" title="function" type="string"/>
+      <attribute id="basis" title="basis" type="string"/>
+      <attribute id="rawSize" title="rawSize" type="integer"/>
+    </attributes>
+    <attributes class="edge">
+      <attribute id="relation" title="relation" type="string"/>
+      <attribute id="track" title="track" type="string"/>
+      <attribute id="rawWeight" title="rawWeight" type="integer"/>
+    </attributes>
+    <nodes>
+      <node id="claim" label="1 Claim">
+        <attvalues>
+          <attvalue for="full_name" value="Claim submitted by claimant"/>
+          <attvalue for="type" value="Claim stage"/>
+          <attvalue for="function" value="Claimant submits a claim with evidence and mapped area"/>
+          <attvalue for="basis" value="Act sections 3 and 6; Rules 4"/>
+          <attvalue for="rawSize" value="64"/>
+        </attvalues>
+        <viz:color r="8" g="127" b="140"/>
+        <viz:size value="64"/>
+        <viz:position x="0" y="1050" z="0"/>
+      </node>
+      <node id="verify" label="2 Verify">
+        <attvalues>
+          <attvalue for="full_name" value="Gram Sabha and Forest Rights Committee verification"/>
+          <attvalue for="type" value="Community stage"/>
+          <attvalue for="function" value="Gram Sabha initiates the process; Forest Rights Committee assists verification"/>
+          <attvalue for="basis" value="Act section 6; Rules 3-4"/>
+          <attvalue for="rawSize" value="64"/>
+        </attvalues>
+        <viz:color r="8" g="127" b="140"/>
+        <viz:size value="64"/>
+        <viz:position x="0" y="850" z="0"/>
+      </node>
+      <node id="resolution" label="3 Gram Sabha">
+        <attvalues>
+          <attvalue for="full_name" value="Gram Sabha resolution"/>
+          <attvalue for="type" value="Community decision"/>
+          <attvalue for="function" value="Gram Sabha considers claims and passes a resolution"/>
+          <attvalue for="basis" value="Act section 6(1); Rules 4"/>
+          <attvalue for="rawSize" value="72"/>
+        </attvalues>
+        <viz:color r="8" g="127" b="140"/>
+        <viz:size value="72"/>
+        <viz:position x="0" y="650" z="0"/>
+      </node>
+      <node id="sdlc" label="4 Subdiv review">
+        <attvalues>
+          <attvalue for="full_name" value="Sub-Divisional Level Committee"/>
+          <attvalue for="type" value="Government review"/>
+          <attvalue for="function" value="Examines the Gram Sabha resolution and prepares the record of rights; includes Revenue, Forest and Tribal Affairs officials and PRI members"/>
+          <attvalue for="basis" value="Act section 6(3),(8)"/>
+          <attvalue for="rawSize" value="72"/>
+        </attvalues>
+        <viz:color r="208" g="138" b="0"/>
+        <viz:size value="72"/>
+        <viz:position x="0" y="400" z="0"/>
+      </node>
+      <node id="sdo" label="5 SDO handoff">
+        <attvalues>
+          <attvalue for="full_name" value="Sub-Divisional Officer"/>
+          <attvalue for="type" value="Government handoff"/>
+          <attvalue for="function" value="Sub-Divisional Officer forwards the SDLC record to the District Level Committee"/>
+          <attvalue for="basis" value="Act section 6(3)"/>
+          <attvalue for="rawSize" value="56"/>
+        </attvalues>
+        <viz:color r="208" g="138" b="0"/>
+        <viz:size value="56"/>
+        <viz:position x="0" y="150" z="0"/>
+      </node>
+      <node id="dlc" label="6 Final decision">
+        <attvalues>
+          <attvalue for="full_name" value="District Level Committee"/>
+          <attvalue for="type" value="Government decision"/>
+          <attvalue for="function" value="District Level Committee considers and finally approves the record"/>
+          <attvalue for="basis" value="Act section 6(5)-(6),(8)"/>
+          <attvalue for="rawSize" value="76"/>
+        </attvalues>
+        <viz:color r="185" g="109" b="0"/>
+        <viz:size value="76"/>
+        <viz:position x="0" y="-100" z="0"/>
+      </node>
+      <node id="vested" label="7 Rights">
+        <attvalues>
+          <attvalue for="full_name" value="Recognition and vesting of forest rights"/>
+          <attvalue for="type" value="Outcome"/>
+          <attvalue for="function" value="Approved record recognizes the forest rights that apply"/>
+          <attvalue for="basis" value="Act sections 3 and 6"/>
+          <attvalue for="rawSize" value="76"/>
+        </attvalues>
+        <viz:color r="118" g="86" b="168"/>
+        <viz:size value="76"/>
+        <viz:position x="0" y="-350" z="0"/>
+      </node>
+      <node id="individual" label="8 Individual">
+        <attvalues>
+          <attvalue for="full_name" value="Individual forest rights"/>
+          <attvalue for="type" value="Right category"/>
+          <attvalue for="function" value="Habitation and livelihood cultivation rights, among other listed rights"/>
+          <attvalue for="basis" value="Act section 3(1)(a)"/>
+          <attvalue for="rawSize" value="62"/>
+        </attvalues>
+        <viz:color r="118" g="86" b="168"/>
+        <viz:size value="62"/>
+        <viz:position x="-160" y="-600" z="0"/>
+      </node>
+      <node id="community" label="8 Community">
+        <attvalues>
+          <attvalue for="full_name" value="Community forest rights"/>
+          <attvalue for="type" value="Right category"/>
+          <attvalue for="function" value="Customary access, use, collection, grazing and other community rights"/>
+          <attvalue for="basis" value="Act section 3(1)(b)-(h)"/>
+          <attvalue for="rawSize" value="62"/>
+        </attvalues>
+        <viz:color r="118" g="86" b="168"/>
+        <viz:size value="62"/>
+        <viz:position x="160" y="-700" z="0"/>
+      </node>
+      <node id="cfr" label="9 Forest">
+        <attvalues>
+          <attvalue for="full_name" value="Community forest resource"/>
+          <attvalue for="type" value="Community resource"/>
+          <attvalue for="function" value="Community forest resource protected, regenerated or managed by the community"/>
+          <attvalue for="basis" value="Act section 3(1)(i); section 5"/>
+          <attvalue for="rawSize" value="64"/>
+        </attvalues>
+        <viz:color r="52" g="122" b="69"/>
+        <viz:size value="64"/>
+        <viz:position x="40" y="-900" z="0"/>
+      </node>
+      <node id="mfp" label="9 Produce">
+        <attvalues>
+          <attvalue for="full_name" value="Minor forest produce"/>
+          <attvalue for="type" value="Community resource"/>
+          <attvalue for="function" value="Traditional collection, use and disposal rights for minor forest produce"/>
+          <attvalue for="basis" value="Act section 3(1)(c)"/>
+          <attvalue for="rawSize" value="64"/>
+        </attvalues>
+        <viz:color r="52" g="122" b="69"/>
+        <viz:size value="64"/>
+        <viz:position x="250" y="-1000" z="0"/>
+      </node>
+      <node id="plan" label="10 Plan">
+        <attvalues>
+          <attvalue for="full_name" value="Community forest conservation and management plan"/>
+          <attvalue for="type" value="Stewardship step"/>
+          <attvalue for="function" value="Community conservation and management plan for sustainable and equitable management"/>
+          <attvalue for="basis" value="Rules 4(1)(f)"/>
+          <attvalue for="rawSize" value="66"/>
+        </attvalues>
+        <viz:color r="52" g="122" b="69"/>
+        <viz:size value="66"/>
+        <viz:position x="40" y="-1130" z="0"/>
+      </node>
+      <node id="biodiversity" label="11 Ecology">
+        <attvalues>
+          <attvalue for="full_name" value="Forest, wildlife and biodiversity"/>
+          <attvalue for="type" value="Stewardship outcome"/>
+          <attvalue for="function" value="Protection of forest, wildlife, biodiversity, water sources and habitat"/>
+          <attvalue for="basis" value="Act section 5; Rules 4"/>
+          <attvalue for="rawSize" value="68"/>
+        </attvalues>
+        <viz:color r="36" g="102" b="58"/>
+        <viz:size value="68"/>
+        <viz:position x="40" y="-1360" z="0"/>
+      </node>
+      <node id="appeal_gs" label="A1 appeal">
+        <attvalues>
+          <attvalue for="full_name" value="Petition to SDLC against Gram Sabha resolution"/>
+          <attvalue for="type" value="Appeal route"/>
+          <attvalue for="function" value="A person aggrieved by a Gram Sabha resolution may petition the SDLC within the statutory process"/>
+          <attvalue for="basis" value="Act section 6(2)"/>
+          <attvalue for="rawSize" value="58"/>
+        </attvalues>
+        <viz:color r="196" g="78" b="82"/>
+        <viz:size value="58"/>
+        <viz:position x="160" y="525" z="0"/>
+      </node>
+      <node id="appeal_sdlc" label="A2 appeal">
+        <attvalues>
+          <attvalue for="full_name" value="Petition to DLC against SDLC decision"/>
+          <attvalue for="type" value="Appeal route"/>
+          <attvalue for="function" value="A person aggrieved by an SDLC decision may petition the DLC"/>
+          <attvalue for="basis" value="Act section 6(4)"/>
+          <attvalue for="rawSize" value="58"/>
+        </attvalues>
+        <viz:color r="196" g="78" b="82"/>
+        <viz:size value="58"/>
+        <viz:position x="160" y="275" z="0"/>
+      </node>
+      <node id="slmc" label="Oversight">
+        <attvalues>
+          <attvalue for="full_name" value="State Level Monitoring Committee"/>
+          <attvalue for="type" value="Monitoring"/>
+          <attvalue for="function" value="Monitors the recognition and vesting process; includes state officials and PRI members"/>
+          <attvalue for="basis" value="Act section 6(7)-(8)"/>
+          <attvalue for="rawSize" value="58"/>
+        </attvalues>
+        <viz:color r="103" g="113" b="126"/>
+        <viz:size value="58"/>
+        <viz:position x="-350" y="950" z="0"/>
+      </node>
+      <node id="nodal" label="Reports">
+        <attvalues>
+          <attvalue for="full_name" value="Nodal agency"/>
+          <attvalue for="type" value="Reporting"/>
+          <attvalue for="function" value="Receives returns and reports from the State Level Monitoring Committee"/>
+          <attvalue for="basis" value="Act section 6(7)"/>
+          <attvalue for="rawSize" value="58"/>
+        </attvalues>
+        <viz:color r="103" g="113" b="126"/>
+        <viz:size value="58"/>
+        <viz:position x="-350" y="750" z="0"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="e1" source="claim" target="verify" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="Claim moves to local verification"/>
+          <attvalue for="track" value="Main claim path"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e2" source="verify" target="resolution" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="Verified claim goes to Gram Sabha decision"/>
+          <attvalue for="track" value="Main claim path"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e3" source="resolution" target="sdlc" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="Resolution forwarded for review"/>
+          <attvalue for="track" value="Main claim path"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e4" source="sdlc" target="sdo" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="SDLC prepares record"/>
+          <attvalue for="track" value="Main claim path"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e5" source="sdo" target="dlc" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="SDO forwards record"/>
+          <attvalue for="track" value="Main claim path"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e6" source="dlc" target="vested" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="DLC decides recognition"/>
+          <attvalue for="track" value="Main claim path"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e7" source="vested" target="individual" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="May recognize"/>
+          <attvalue for="track" value="Rights outcomes"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e8" source="vested" target="community" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="May recognize"/>
+          <attvalue for="track" value="Rights outcomes"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e9" source="community" target="cfr" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="May include"/>
+          <attvalue for="track" value="Stewardship path"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e10" source="community" target="mfp" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="May include access"/>
+          <attvalue for="track" value="Stewardship path"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e11" source="cfr" target="plan" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="Managed through"/>
+          <attvalue for="track" value="Stewardship path"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e12" source="plan" target="biodiversity" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="Protects"/>
+          <attvalue for="track" value="Stewardship path"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e13" source="resolution" target="appeal_gs" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="May appeal"/>
+          <attvalue for="track" value="Appeal route"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e14" source="appeal_gs" target="sdlc" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="SDLC hears petition"/>
+          <attvalue for="track" value="Appeal route"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e15" source="sdlc" target="appeal_sdlc" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="May appeal"/>
+          <attvalue for="track" value="Appeal route"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e16" source="appeal_sdlc" target="dlc" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="DLC hears petition"/>
+          <attvalue for="track" value="Appeal route"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e17" source="slmc" target="sdlc" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="Monitors process"/>
+          <attvalue for="track" value="Monitoring route"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="e18" source="slmc" target="nodal" weight="6">
+        <attvalues>
+          <attvalue for="relation" value="Reports to"/>
+          <attvalue for="track" value="Monitoring route"/>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
