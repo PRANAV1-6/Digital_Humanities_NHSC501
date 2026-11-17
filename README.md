@@ -4,10 +4,6 @@ IDH 2026 Assignment Projects
 FOR PRANAV, 26MA0016@IITISM.AC.IN, 26MA0016, 
 Mapping and network visualizations
 
-District wise Hindi speaker distribution in India
-
-This mapping project visualizes the district-level percentage of Hindi speakers across India using Census of India 2011 data and district boundaries. The choropleth maps use graduated color classes to show the spatial pattern: higher percentages are concentrated across much of northern and central India, while many districts in the south and parts of the northeast show lower percentages. Two color treatments of the map are included for comparison and presentation.
-
 FRA 2006 _Institutional_Structure_Roles_Duties_and_Rights
 
 This network project maps the main institutions and actors represented in the Forest Rights Act 2006 process, including rights holders, the Gram Sabha and Forest Rights Committee, sub-divisional and district committees, state-level monitoring, government departments, and Panchayati Raj representatives. Directed links describe the roles and relationships recorded in the project, alongside claims, petitions, recognized rights, forest resources, and conservation responsibilities.
